@@ -1,0 +1,20 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+/target
+/bin/*
+/indexes
+/.settings
+/src/main/webapp/WEB-INF/classes/*
+
+.mymetadata
+.project
+.classpath
+.myeclipse
+
+
+/src/main/resources/application.properties
