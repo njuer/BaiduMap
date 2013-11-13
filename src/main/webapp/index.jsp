@@ -36,8 +36,15 @@ body,html,#allmap {
 
 	map.enableScrollWheelZoom(); //开启鼠标滚轮缩放功能。仅对 PC 上有效。
 	//添加标注点
-	addMarker(new BMap.Point(119.826323, 31.373006));
+	//addMarker(new BMap.Point(119.826323, 31.373006));
 	
+	
+	 var myIcon = new BMap.Icon("http://api.map.baidu.com/img/markers.png", new BMap.Size(23, 25), {  
+                        offset: new BMap.Size(10, 25), // 指定定位位置  
+                        imageOffset: new BMap.Size(0- 1* 25, 0) // 设置图片偏移  
+                    });  
+        var marker=new BMap.Marker(new BMap.Point(119.826323, 31.373006),{icon:myIcon});  
+        map.addOverlay(marker);  
 	
 	//addMarker(new BMap.Point(119.822748,31.370107));
 
